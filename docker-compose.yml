@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  book:
+    build: .
+    image: tnp/code-book
+    command: mdbook serve -p 8008 -n 0.0.0.0
+    volumes:
+      - .:/usr/src/mybook
